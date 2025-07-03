@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import { ClerkProvider } from "@clerk/nextjs";
 
+
 import type { Metadata } from "next";
 
 
@@ -23,12 +24,12 @@ export default function RootLayout({
         <body >
           <Header />
           <div className="w-full flex">
+            <div>
             <Sidebar />
-            <div className="flex-1">
-              {children}
-
             </div>
-
+            <div className="flex-1 min-h-screen p-4 md:p-6 bg-gray-300">
+              {children}
+            </div>
           </div>
         </body>
       </html>

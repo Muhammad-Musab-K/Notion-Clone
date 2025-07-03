@@ -8,8 +8,8 @@ function Header() {
 
     const { user } = useUser()
     return (
-        <div className='flex justify-between p-4 bg-amber-50'>
-            {user && <h4 className='text-2xl'>{user?.firstName}{user?.lastName}{`'s`} Space</h4>}
+        <div className='flex justify-between p-4 bg-blue-950'>
+            {user && <h4 className='text-2xl text-white'>{user?.firstName}{user?.lastName}{`'s`} Space</h4>}
             <div>
                 <SignedIn>
                     <UserButton />

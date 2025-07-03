@@ -4,7 +4,7 @@ import React from 'react'
 
 function page() {
   return (
-    <div className='p-2 md:p-2 '>
+    <div className='bg-white'>
       hello here i start ,y mew Project
     </div>
   )
